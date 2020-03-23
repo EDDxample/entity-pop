@@ -1,3 +1,3 @@
 # Entity pop
 
-Explanation: Check SeedTest.java
+Explanation: Check [SeedTest.java](SeedTest.java)
