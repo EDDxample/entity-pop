@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Main {
 
@@ -12,10 +13,10 @@ public class Main {
 
         rng.setPopSeed(blockX, blockZ);
 
-        // list = biome.getEntitySpawnList(CREATURE);
-        // if list not empty:
+        List<SpawnEntry> list = BiomeSpawnLists.DESERT.spawnEntries;
+        if (list.isEmpty()) return;
 
-        float biomeMaxSpawnLimit = 0.1f; // varies per biome
+        float biomeMaxSpawnLimit = 0.1f; // 0.07f for IceSpickes, SnowyTundra and SnowyMountain
         
         while(rng.nextFloat() < biomeMaxSpawnLimit) {
             
