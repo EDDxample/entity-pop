@@ -67,7 +67,8 @@ class RealJavaRandom {
         seed = (seed - B) * Ai & C; // reverse the seed one LCG step
         seed ^= A;                  // reverse the XOR
         
-        System.out.println(nextFloat(seed));
+        System.out.println(nextFloat(seed));                        // dissected java random
+        System.out.println(new java.util.Random(seed).nextFloat()); // real java random
     }
 
     static long setSeed(long seed) {
